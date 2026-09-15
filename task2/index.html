@@ -3,26 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkyStructure - Лабораторная №2</title>
-  <!-- Подключаем нормальный современный шрифт -->
+  <title>Лабораторная №2 - SkyStructure</title>
+  <!-- Премиальный шрифт Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Файл стилей должен лежать рядом! -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Шапка сайта -->
 <header class="site-header">
   <div class="logo">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
     </svg>
     SKYSTRUCTURE
   </div>
 
-  <!-- Гамбургер на чистом CSS (без JS) -->
   <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
   <label for="menu-toggle" class="hamburger">
     <span></span>
@@ -30,124 +29,123 @@
     <span></span>
   </label>
 
-  <!-- Навигация -->
   <nav class="nav-menu">
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">Services</a>
-    <a href="#">About Us</a>
-    <a href="#">Contact</a>
-    <a href="#" class="btn btn-accent">Get Started</a>
+    <a href="#">Главная</a>
+    <a href="#">Проекты</a>
+    <a href="#">Услуги</a>
+    <a href="#">О компании</a>
+    <a href="#">Контакты</a>
+    <a href="#" class="btn btn-accent">Начать работу</a>
   </nav>
 </header>
 
-<!-- Основная сетка страницы (Требование: Grid) -->
 <main class="main-grid">
 
-  <!-- Герой-секция с фоном -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Elevating Modern<br>Infrastructure</h1>
-      <p>Engineering Excellence · Innovative Solutions</p>
-      <a href="#" class="btn btn-primary">Learn More</a>
+      <h1>Архитектура<br>будущего</h1>
+      <p>Инженерное совершенство · Инновационные решения</p>
+      <a href="#" class="btn btn-primary">Узнать больше</a>
     </div>
   </section>
 
-  <!-- Перекрывающий блок с карточками -->
   <section class="cards-grid">
 
     <div class="card card-dark">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      <h2>О нас</h2>
+      <p>Мы создаем устойчивую инфраструктуру, объединяя передовые технологии и многолетний опыт. Наша миссия — строить надежные объекты, которые меняют облик современных мегаполисов и служат поколениям.</p>
     </div>
 
     <div class="card card-darker">
-      <h2>Our Expertise</h2>
+      <h2>Наша экспертиза</h2>
       <div class="expertise-list">
         <div class="expertise-item">
           <span class="icon">⚙️</span>
           <div>
-            <h3>Advanced Engineering</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Высокоточный инжиниринг</h3>
+            <p>Комплексное проектирование с применением BIM-моделирования.</p>
           </div>
         </div>
         <div class="expertise-item">
           <span class="icon">🏗️</span>
           <div>
-            <h3>Construction Management</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Управление стройкой</h3>
+            <p>Полный контроль цикла возведения зданий любой сложности.</p>
           </div>
         </div>
         <div class="expertise-item">
           <span class="icon">🌱</span>
           <div>
-            <h3>Sustainable Solutions</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Эко-стандарты</h3>
+            <p>Внедрение зеленых технологий и энергоэффективных решений.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="card card-dark">
-      <h2>Recent Projects</h2>
+      <h2>Свежие проекты</h2>
       <div class="projects-list">
         <div class="project-item">
-          <img src="img/project1.jpg" alt="International Tower">
-          <p>International Tower</p>
+          <!-- Железобетонная ссылка Pexels -->
+          <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Башня Интернешнл">
+          <p>Башня «Интернешнл»</p>
         </div>
         <div class="project-item">
-          <img src="img/project2.jpg" alt="Corporate Headquarters">
-          <p>Corporate Headquarters</p>
+          <!-- Железобетонная ссылка Pexels -->
+          <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Штаб-квартира корпорации">
+          <p>Штаб-квартира корпорации</p>
         </div>
       </div>
     </div>
 
   </section>
 
-  <!-- Обзор компании -->
   <section class="overview">
     <div class="overview-text">
-      <h2>Company Overview</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam innovando, adipiscing labore et dolore magna aliqua. Ut labore dolore magna aliqua.</p>
+      <h2>Обзор компании</h2>
+      <p>С 2011 года мы являемся надежным партнером для крупнейших девелоперов. Наш подход базируется на прозрачности процессов, строгом соблюдении сроков и внедрении инновационных архитектурных концепций в каждый проект.</p>
 
       <div class="stats-flex">
         <div class="stat-box">
-          <span class="stat-num">+15</span>
-          <span class="stat-desc">Years Serving<br>Industry Leaders</span>
+          <span class="stat-num">15+</span>
+          <span class="stat-desc">Лет на рынке<br>недвижимости</span>
         </div>
         <div class="stat-box">
-          <span class="stat-num">+350</span>
-          <span class="stat-desc">Completed<br>Projects</span>
+          <span class="stat-num">350+</span>
+          <span class="stat-desc">Завершенных<br>проектов</span>
         </div>
         <div class="stat-box">
-          <span class="stat-num">+80</span>
-          <span class="stat-desc">Skilled Team<br>Members</span>
+          <span class="stat-num">80+</span>
+          <span class="stat-desc">Профильных<br>инженеров</span>
         </div>
       </div>
     </div>
     <div class="overview-image">
-      <img src="img/office.jpg" alt="Office Interior">
+      <!-- Железобетонная ссылка Pexels -->
+      <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Интерьер офиса">
     </div>
   </section>
 
-  <!-- Форма обратной связи (Обязательное требование) -->
   <section class="contact-section">
-    <h2>Get in Touch</h2>
-    <form class="contact-form" action="#" method="POST">
-      <div class="form-group">
-        <label for="name">Имя</label>
-        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
-      </div>
-      <div class="form-group">
-        <label for="message">Сообщение</label>
-        <textarea id="message" name="message" rows="4" placeholder="Напишите нам..." required></textarea>
-      </div>
-      <button type="submit" class="btn btn-submit">Отправить сообщение</button>
-    </form>
+    <div class="contact-container">
+      <h2>Связаться с нами</h2>
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Электронная почта</label>
+          <input type="email" id="email" name="email" placeholder="ivan@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Детали проекта</label>
+          <textarea id="message" name="message" rows="4" placeholder="Кратко опишите вашу задачу..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">Отправить запрос</button>
+      </form>
+    </div>
   </section>
 
 </main>
