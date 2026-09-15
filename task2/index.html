@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лабораторная работа №2 - SkyStructure</title>
+  <title>SkyStructure - Лабораторная №2</title>
+  <!-- Подключаем нормальный современный шрифт -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Шапка сайта -->
-<header class="header">
-  <div class="logo">SKYSTRUCTURE</div>
+<header class="site-header">
+  <div class="logo">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    SKYSTRUCTURE
+  </div>
 
-  <!-- Гамбургер для мобильной версии (только визуал, без JS) -->
-  <label class="hamburger">
+  <!-- Гамбургер на чистом CSS (без JS) -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+  <label for="menu-toggle" class="hamburger">
     <span></span>
     <span></span>
     <span></span>
@@ -25,106 +37,116 @@
     <a href="#">Services</a>
     <a href="#">About Us</a>
     <a href="#">Contact</a>
-    <a href="#" class="btn btn-header">Get Started</a>
+    <a href="#" class="btn btn-accent">Get Started</a>
   </nav>
 </header>
 
-<!-- Основная сетка страницы (Grid) -->
-<main class="main-layout">
+<!-- Основная сетка страницы (Требование: Grid) -->
+<main class="main-grid">
 
-  <!-- Герой-секция -->
+  <!-- Герой-секция с фоном -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Elevating Modern Infrastructure</h1>
+      <h1>Elevating Modern<br>Infrastructure</h1>
       <p>Engineering Excellence · Innovative Solutions</p>
       <a href="#" class="btn btn-primary">Learn More</a>
     </div>
   </section>
 
-  <!-- Сетка с информацией (Grid внутри) -->
-  <section class="info-grid">
-    <!-- Блок 1 -->
-    <div class="info-card about">
+  <!-- Перекрывающий блок с карточками -->
+  <section class="cards-grid">
+
+    <div class="card card-dark">
       <h2>About Us</h2>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
     </div>
 
-    <!-- Блок 2 (с внутренним Flexbox) -->
-    <div class="info-card expertise">
+    <div class="card card-darker">
       <h2>Our Expertise</h2>
       <div class="expertise-list">
         <div class="expertise-item">
-          <div class="icon">⚙️</div>
-          <h3>Advanced Engineering</h3>
+          <span class="icon">⚙️</span>
+          <div>
+            <h3>Advanced Engineering</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
         <div class="expertise-item">
-          <div class="icon">🏗️</div>
-          <h3>Construction Management</h3>
+          <span class="icon">🏗️</span>
+          <div>
+            <h3>Construction Management</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
         <div class="expertise-item">
-          <div class="icon">🌱</div>
-          <h3>Sustainable Solutions</h3>
-        </div>
-        <div class="expertise-item">
-          <div class="icon">📈</div>
-          <h3>Corporate Solutions</h3>
+          <span class="icon">🌱</span>
+          <div>
+            <h3>Sustainable Solutions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Блок 3 -->
-    <div class="info-card projects">
+    <div class="card card-dark">
       <h2>Recent Projects</h2>
-      <div class="project-item">
-        <div class="project-img bg-placeholder-1"></div>
-        <p>International Tower</p>
-      </div>
-      <div class="project-item">
-        <div class="project-img bg-placeholder-2"></div>
-        <p>Corporate Headquarters</p>
+      <div class="projects-list">
+        <div class="project-item">
+          <img src="img/project1.jpg" alt="International Tower">
+          <p>International Tower</p>
+        </div>
+        <div class="project-item">
+          <img src="img/project2.jpg" alt="Corporate Headquarters">
+          <p>Corporate Headquarters</p>
+        </div>
       </div>
     </div>
+
   </section>
 
   <!-- Обзор компании -->
   <section class="overview">
     <div class="overview-text">
       <h2>Company Overview</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam innovando, adipiscing labore et dolore magna aliqua. Ut labore dolore magna aliqua.</p>
+
+      <div class="stats-flex">
+        <div class="stat-box">
+          <span class="stat-num">+15</span>
+          <span class="stat-desc">Years Serving<br>Industry Leaders</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">+350</span>
+          <span class="stat-desc">Completed<br>Projects</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-num">+80</span>
+          <span class="stat-desc">Skilled Team<br>Members</span>
+        </div>
+      </div>
     </div>
-    <div class="stats">
-      <div class="stat-item">
-        <span class="stat-number">+15</span>
-        <span class="stat-label">Years Serving Industry Leaders</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">+350</span>
-        <span class="stat-label">Completed Projects</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">+80</span>
-        <span class="stat-label">Skilled Team Members</span>
-      </div>
+    <div class="overview-image">
+      <img src="img/office.jpg" alt="Office Interior">
     </div>
   </section>
 
-  <!-- Форма обратной связи (Обязательное требование №5) -->
-  <section class="contact-form-section">
-    <h2>Contact Us</h2>
+  <!-- Форма обратной связи (Обязательное требование) -->
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
     <form class="contact-form" action="#" method="POST">
       <div class="form-group">
         <label for="name">Имя</label>
-        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Ваш email" required>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
       </div>
       <div class="form-group">
         <label for="message">Сообщение</label>
-        <textarea id="message" name="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+        <textarea id="message" name="message" rows="4" placeholder="Напишите нам..." required></textarea>
       </div>
-      <button type="submit" class="btn btn-submit">Отправить</button>
+      <button type="submit" class="btn btn-submit">Отправить сообщение</button>
     </form>
   </section>
 
